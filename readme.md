@@ -4,3 +4,4 @@ Code written in collaboration between Matt Knudson (Shagomir), Cian Cagemoe (Koe
 
 CSS Reset pulled from class repository. 
 
+Code box formatting done with information https://css-tricks.com/considerations-styling-pre-tag/ 

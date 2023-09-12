@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./reset.css">
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Document</title>
+    <title>CSS Snippet Cheatsheet</title>
 </head>
 
 <body>
@@ -17,92 +17,100 @@
     </header>
     <div class="flex-container">
         <main>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2>Flexbox Row</h2>
                 </section>
                 <section class="code-desc">
                     <p>Use these three properties to create a Flexbox row Layout.</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        .row {<br>
-                        &nbsp; display: flex;<br>
-                        &nbsp; flex-direction: row;<br>
-                        &nbsp; flex-wrap: wrap;<br></indent>
-                        }
+                <section class="code-box">
+                    <pre><code="code-css">.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</code></pre>
+                        
                     </p>
                 </section>
             </content>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2>Flexbox Column</h2>
                 </section>
                 <section class="code-desc">
-                    <p>Use these three properties to create a Flexbox row Layout.</p>
+                    <p>Use this to create a Flexbox Column Layout.</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        code block
-                    </p>
+                <section class="code-box">
+                    <pre><code="code-css">.column {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
                 </section>
             </content>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2> CSS Grid Layout</h2>
                 </section>
                 <section class="code-desc">
-                    <p>Use these three properties to create a Flexbox row Layout.</p>
+                    <p>Build a 12-column layout using CSS Grid</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        code block
-                    </p>
+                <section class="code-box">
+                    <pre><code="code-css">.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}</code></pre>
                 </section>
             </content>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2> Linear Gradients</h2>
                 </section>
                 <section class="code-desc">
-                    <p>Use these three properties to create a Flexbox row Layout.</p>
+                    <p>This will create a background linear gradient from top to bottom.</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        code block
-                    </p>
+                <section class="code-box">
+                    <pre><code="code-css">.linear-gradient-background {
+    background-image: linear-gradient(to bottom, rgba(232, 102, 123, 0.3) 0%, rgba(232, 102, 123, 0.6) 100%);
+}</code></pre>
                 </section>
             </content>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2> Box Transition Glow</h2>
                 </section>
                 <section class="code-desc">
-                    <p>Use these three properties to create a Flexbox row Layout.</p>
+                    <p>Use translation and box shadows to glow on hover.</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        code block
-                    </p>
+                <section class="code-box">
+                    <pre><code="code-css">.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}    
+    .code-card:hover, .code-card:hover .card-header {
+    box-shadow:inset 0px 0px 8px rgba(232, 102, 123, 1), 0 0 15px rgba(232, 102, 123, 0.3):
+}</code></pre>
                 </section>
             </content>
-            <content class="snippet-box">
+            <content class="code-card">
                 <section class="code-head">
                     <h2>Overlay Card with Title</h2>
                 </section>
                 <section class="code-desc">
-                    <p>Use these three properties to create a Flexbox row Layout.</p>
+                    <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
                 </section>
-                <section class="code-card">
-                    <p>
-                        code block
-                    </p>
+                <section class="code-box">
+                    <pre><code="code-css">.card-header {
+    position: relative;
+    margin-top: -20px;
+}</code></pre>
                 </section>
             </content>
 
 
         </main>
-        </dif>
+        </div>
 
 </body>
 

@@ -1,0 +1,27 @@
+:root{}
+
+body{
+
+    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+header {
+
+
+    border: 1px;
+    border-color: red;
+    margin: 10 px
+
+}
+
+h1 {
+    font-size: 200%;
+    color: black;
+
+}
+
+article{}

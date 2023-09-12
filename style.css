@@ -1,14 +1,13 @@
 :root {
-    --headercolor: #99089E;
-    --h2color: #59035C;
-    --background-gradient: to bottom, #660066 0%, #FF3399 100%;
-    --white: #9c9c9c;
-    --black: #000;
+    --brightAccent: #6ca048;
+    --darkAccent: #253522;
+    --textColor: #ffffff;
+    --background: #000000;
 }
 
 body{
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--background);
+    color: var(--textColor);
     font-size: 16px;
     line-height: 1.5;
     margin-left: auto; margin-right: auto;
@@ -37,23 +36,23 @@ main {
 
 h1 {
     font-size: 200%;
-    color:var(--headercolor);
+    color:var(--brightAccent);
     
 }
 
 h2 {
     padding: 0 1em;
     font-size: 150%;
-    color:var(--h2color);
+    color:var(--brightAccent);
 }
 
 .code-card {
 
     padding: 10px;
-    border: dashed var(--white);
+    border: dashed var(--textColor);
     width: 30%;
     min-width: 300px;
-    color:var(--h2color);
+    color:var(--brightAccent);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -65,8 +64,8 @@ h2 {
 .code-head {
     position: relative;
     margin-top: -20px;
-    border: solid var(--white);
-    background-color: var(--black);
+    border: solid var(--textColor);
+    background-color: var(--background);
     border-radius: 10px;
 }
 
@@ -76,9 +75,9 @@ h2 {
 
 .code-box {
     padding: 10px;
-    border: solid var(--black);
-    color: var(--white);
-    background-image: linear-gradient(to bottom, var(--headercolor) 0%, var(--h2color) 100%);
+    border: solid var(--background);
+    color: var(--textColor);
+    background-image: linear-gradient(to bottom, var(--brightAccent) 0%, var(--darkAccent) 100%);
     border-radius: 10px;
     font-family: monospace;
     height: 100%
@@ -94,7 +93,7 @@ pre {
     transition: all 0.5s ease-in-out;
 }    
     .code-card:hover, .code-card:hover .card-head {
-    box-shadow:inset 0px 0px 8px var(--headercolor), 0 0 15px var(--h2color);
+    box-shadow:inset 0px 0px 8px var(--brightAccent), 0 0 15px var(--darkAccent);
 }
 
 /* on <pre> click, select all contents so the code is highlighted */

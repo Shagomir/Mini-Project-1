@@ -1,4 +1,9 @@
-:root{}
+:root {
+    --headercolor: #99089E;
+    --h2color: #59035C;
+    --background-gradient: background: linear-gradient(to bottom, #660066 0%, #FF3399 100%);
+    --white: #fff;
+}
 
 body{
 

@@ -1,32 +1,90 @@
 :root {
     --headercolor: #99089E;
     --h2color: #59035C;
-    --background-gradient: background: linear-gradient(to bottom, #660066 0%, #FF3399 100%);
-    --white: #fff;
+    --background-gradient: to bottom, #660066 0%, #FF3399 100%;
+    --white: #9c9c9c;
 }
 
 body{
-
+    background-color: black;
+    color: var(--white);
     font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
+
 }
 
 header {
-
-
-    border: 1px;
-    border-color: red;
-    margin: 10 px
+    padding: 20px;
+    margin: 10 px;
+    width: 100%;
+    text-align: center;
 
 }
+
+main {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80%;
+    padding: 20px;
+    margin: 10 px;
+    flex-flow: row wrap;
+    flex: 1 1 0;
+}
+
+
 
 h1 {
     font-size: 200%;
-    color: black;
-
+    color:var(--headercolor)
+    
 }
 
-article{}
+h2 {
+    font-size: 150%;
+    color:var(--h2color);
+    margin: 0;
+    word-wrap: normal;
+}
+
+content{
+    padding: 20px;
+    border: dashed var(--white);
+    width: 25%;
+    min-width: 300px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    color:var(--h2color);
+    margin-top: 50px;
+    
+}
+
+
+section{
+
+    position: relative;
+    bottom: 50px;
+    padding: 10px;
+    border: solid white;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0
+}
+
+article{
+    padding: 10px;
+    border: solid black;
+    color: var(--white);
+    background-image: linear-gradient(to bottom, var(--headercolor) 0%, var(--h2color) 100%);
+    border-radius: 10px;
+}
+
+/* on <pre> click, select all contents so the code is highlighted */
+.code-card p pre:active {
+    user-select: all;
+  }
+
+article p {
+    font-family: monospace;
+    line-height: 1.5;
+}

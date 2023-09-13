@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     flex: 1 1 100%;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -56,7 +56,6 @@ h2 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    height: 40%;
     margin: 2em 1em 0 ;
 }
 
